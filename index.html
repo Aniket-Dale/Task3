@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>☀️ Weather Dashboard</h1>
+    <p>Responsive | API | Quiz</p>
+  </header>
+
+  <!-- Weather Search -->
+  <section class="search">
+    <input type="text" id="cityInput" placeholder="Enter city name...">
+    <button onclick="getWeather()">Get Weather</button>
+  </section>
+
+  <!-- Weather Result -->
+  <section class="weather" id="weather"></section>
+
+  <!-- Weather Tips Carousel -->
+  <section>
+    <h2>💡 Weather Tips</h2>
+    <div class="carousel" id="tips-carousel">
+      <p class="active">Stay hydrated in hot weather!</p>
+      <p>Carry an umbrella if it looks cloudy.</p>
+      <p>Wear warm clothes during winter.</p>
+      <p>Check AQI before going for a jog.</p>
+    </div>
+  </section>
+
+  <!-- Quiz Section -->
+  <section class="quiz">
+    <h2>🌍 Weather Quiz</h2>
+    <p id="question">Loading question...</p>
+    <button onclick="checkAnswer(true)">Yes</button>
+    <button onclick="checkAnswer(false)">No</button>
+    <p id="result"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
